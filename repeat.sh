@@ -13,6 +13,7 @@ shift 1
 
 for (( i = 0; i < "$reps"; ++i ))
 do
+    # in case command wants to know its invoked by repeat
     export BLA_REPEAT="$i"
     "$@"
 done
